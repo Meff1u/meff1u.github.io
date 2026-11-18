@@ -77,9 +77,21 @@ img {
 
 /* ───── Backdrop: sky, sun, mountains, grid ───── */
 
-.backdrop > * {
+.backdrop {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: -2;
+    width: 100%;
+    height: 100vh;
+    height: 100lvh;
+    overflow: hidden;
+    pointer-events: none;
+    contain: strict;
+}
+
+.backdrop > * {
+    position: absolute;
 }
 
 .sky {
@@ -116,9 +128,6 @@ img {
     border-radius: 50%;
     transform: translate(-50%, -100%);
     background: linear-gradient(180deg, var(--sun-top) 0%, var(--sun-middle) 45%, var(--sun-bottom) 85%);
-    box-shadow:
-        0 0 80px 10px rgba(255, 60, 150, 0.45),
-        0 0 200px 40px rgba(212, 60, 255, 0.25);
     --stripes: linear-gradient(
         180deg,
         #000 0 48%,
@@ -139,8 +148,8 @@ img {
 .mountains {
     left: 0;
     right: 0;
-    top: calc(60% - 9vh);
-    height: 9vh;
+    top: 51%;
+    height: 9%;
     background: #0a0218;
     clip-path: polygon(0 100%, 0 55%, 6% 30%, 12% 62%, 19% 18%, 27% 70%, 33% 40%, 38% 75%, 62% 75%, 67% 35%, 73% 66%, 80% 12%, 87% 58%, 93% 28%, 100% 50%, 100% 100%);
     filter: drop-shadow(0 -1px 0 rgba(255, 63, 180, 0.6));
@@ -151,13 +160,21 @@ img {
     right: -50%;
     top: 60%;
     bottom: -10%;
-    background-image: linear-gradient(rgba(255, 63, 180, 0.75) 2px, transparent 2px), linear-gradient(90deg, rgba(212, 60, 255, 0.6) 2px, transparent 2px);
-    background-size: 60px 60px;
+    overflow: hidden;
     transform: perspective(320px) rotateX(62deg);
     transform-origin: 50% 0;
-    animation: drive 1.6s linear infinite;
     -webkit-mask: linear-gradient(180deg, transparent, #000 22%);
     mask: linear-gradient(180deg, transparent, #000 22%);
+}
+
+.grid::before {
+    content: "";
+    position: absolute;
+    inset: -60px 0 0;
+    background-image: linear-gradient(rgba(255, 63, 180, 0.75) 2px, transparent 2px), linear-gradient(90deg, rgba(212, 60, 255, 0.6) 2px, transparent 2px);
+    background-size: 60px 60px;
+    animation: drive 1.6s linear infinite;
+    will-change: transform;
 }
 
 .vignette {
@@ -172,7 +189,6 @@ img {
     z-index: 50;
     pointer-events: none;
     opacity: 0.55;
-    mix-blend-mode: multiply;
     background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.18) 0 1px, transparent 1px 3px);
 }
 
@@ -1093,9 +1109,7 @@ footer {
 
 @keyframes drive {
     to {
-        background-position:
-            0 60px,
-            0 0;
+        transform: translate3d(0, 60px, 0);
     }
 }
 
@@ -1178,6 +1192,18 @@ footer {
     .button {
         padding: 12px 18px;
         font-size: 12px;
+    }
+}
+
+@media (hover: none), (pointer: coarse) {
+    .panel {
+        background: rgba(22, 7, 40, 0.9);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    .scanlines {
+        display: none;
     }
 }
 
