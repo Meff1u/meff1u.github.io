@@ -1,0 +1,54 @@
+[
+    {
+        "name": "BallIdentifier",
+        "emoji": "🔍",
+        "kind": "website · flagship",
+        "featured": true,
+        "description": "Identify any countryball from a spawn image in a second. Spawn art gallery, catch trainer, collectors list, Ballsdex stats and a dashboard for server admins. Supports multiple dexes, with community-maintained data via pull requests.",
+        "stack": ["JavaScript", "Discord OAuth2", "sharp"],
+        "live": "https://ballidentifier.xyz/",
+        "repo": "https://github.com/Meff1u/BallIdentifier"
+    },
+    {
+        "name": "BallIdentifier bot",
+        "emoji": "🤖",
+        "kind": "discord bot",
+        "description": "The Discord side of BallIdentifier: right-click a spawn → Apps → Identify. Perceptual hashing, catch stats, collections, profiles and dex reports.",
+        "stack": ["discord.js v14", "MongoDB", "Express"],
+        "repo": "https://github.com/Meff1u/BallIdentifier-bot"
+    },
+    {
+        "name": "fansuby.cc",
+        "emoji": "🎞️",
+        "kind": "website · ecosystem",
+        "description": "A catalog of Polish anime subtitles matched to specific releases. Full-text search, moderated uploads, a public API, Stremio integration, a Discord bot and a Firefox extension.",
+        "partner": { "name": "Nekido", "url": "https://nekido.pl" },
+        "stack": ["Next.js", "TypeScript", "PostgreSQL", "Meilisearch"],
+        "live": "https://fansuby.cc"
+    },
+    {
+        "name": "WorldNotes",
+        "emoji": "🌍",
+        "kind": "web app",
+        "description": "An interactive 3D globe for notes about countries. 265 countries and territories, colors, groups, profiles, JSON import/export. Everything stays in the browser, no account needed.",
+        "stack": ["Three.js", "globe.gl", "D3", "Vite"],
+        "live": "https://meff1u.github.io/WorldNotes/",
+        "repo": "https://github.com/Meff1u/WorldNotes"
+    },
+    {
+        "name": "SteamRPC",
+        "emoji": "🎮",
+        "kind": "tool",
+        "description": "Shows the game you're playing on Steam as your Discord Rich Presence, including Steam Rich Presence details for games that support it.",
+        "stack": ["Node.js", "Discord RPC", "Steam API"],
+        "repo": "https://github.com/Meff1u/SteamRPC"
+    },
+    {
+        "name": "Verve",
+        "emoji": "🎵",
+        "kind": "discord bot",
+        "description": "Multi-language Discord music bot with YouTube and Spotify support.",
+        "stack": ["discord.js", "Node.js"],
+        "repo": "https://github.com/Meff1u/Verve"
+    }
+]

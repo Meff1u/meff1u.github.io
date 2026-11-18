@@ -1,0 +1,25 @@
+{
+    "name": "meff1u.github.io",
+    "version": "1.0.0",
+    "description": "My bio and portfolio",
+    "private": true,
+    "type": "commonjs",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Meff1u/meff1u.github.io.git"
+    },
+    "author": "Meff1u",
+    "license": "ISC",
+    "homepage": "https://meff1u.github.io/",
+    "dependencies": {
+        "simple-icons": "^13.21.0"
+    },
+    "devDependencies": {
+        "vite": "^8.3.8"
+    }
+}

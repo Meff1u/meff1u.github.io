@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Desu-Online.pl",
+        "role": "admin",
+        "description": "Polish anime streaming site",
+        "url": "https://desu-online.pl",
+        "cta": "desu-online.pl →"
+    },
+    {
+        "name": "Discord Bots Poland",
+        "role": "admin",
+        "description": "Polish bot developers community",
+        "url": "https://discord.gg/discord-bots-poland-801166549197127711",
+        "cta": "join →"
+    },
+    {
+        "name": "Ball Identifier",
+        "role": "creator",
+        "description": "Project website & server",
+        "url": "https://ballidentifier.xyz/",
+        "cta": "ballidentifier.xyz →"
+    }
+]

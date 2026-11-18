@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <meta name="description" content="Meffiu, a developer from Poland. Web apps, Discord bots and tools people actually use." />
+        <meta name="theme-color" content="#12051f" />
+        <title>Meffiu · Developer from Poland</title>
+        <link rel="canonical" href="https://meff1u.github.io/" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Meffiu" />
+        <meta property="og:url" content="https://meff1u.github.io/" />
+        <meta property="og:title" content="Meffiu · Developer from Poland" />
+        <meta property="og:description" content="Web apps • Discord bots • Tools people actually use" />
+        <meta property="og:image" content="https://meff1u.github.io/avatar.png" />
+        <meta property="og:locale" content="en_US" />
+
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Meffiu · Developer from Poland" />
+        <meta name="twitter:description" content="Web apps • Discord bots • Tools people actually use" />
+        <meta name="twitter:image" content="https://meff1u.github.io/avatar.png" />
+        <link rel="icon" id="favicon" type="image/png" href="/avatar.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@500;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        />
+    </head>
+    <body>
+        <div class="backdrop" aria-hidden="true">
+            <div class="sky"></div>
+            <div class="stars"></div>
+            <div class="sun"></div>
+            <div class="mountains"></div>
+            <div class="grid"></div>
+            <div class="vignette"></div>
+        </div>
+        <div class="scanlines" aria-hidden="true"></div>
+
+        <header class="hero wrap">
+            <div class="avatar-ring"><img id="hero-avatar" src="/avatar.png" alt="Meffiu avatar" /></div>
+            <h1 class="name">MEFFIU</h1>
+            <p class="tagline">Web apps • Discord bots • Tools</p>
+            <div class="chips">
+                <span class="chip">📍 <b>Poland</b></span>
+                <span class="chip">🎂 <b id="age"></b> y/o</span>
+                <span class="chip">💻 <b>IT specialist &amp;&amp; Developer</b></span>
+                <span class="chip">🗣️ <b>PL · EN · ES</b></span>
+            </div>
+            <div class="cta">
+                <a class="button" href="#projects">Projects</a>
+                <a class="button alt" href="#socials">Socials</a>
+            </div>
+            <div class="scroll-hint">▼ scroll ▼</div>
+        </header>
+
+        <main>
+            <section id="about" class="wrap">
+                <div class="label">01 // about</div>
+                <h2>Who am I</h2>
+                <div class="bento">
+                    <article class="panel about reveal">
+                        <div class="panel-head">
+                            <span>about_me.txt</span>
+                            <span class="dots"><i></i><i></i><i></i></span>
+                        </div>
+                        <div class="panel-body">
+                            <p>
+                                Hey! I'm <strong>Meffiu</strong>, a developer from Poland. I build <span class="highlight">web apps</span> and
+                                <span class="highlight">Discord bots</span> for communities, mostly in <strong>JavaScript / Node.js</strong>, and more and more in
+                                TypeScript and Next.js.
+                            </p>
+                            <p>
+                                My biggest project is <strong>BallIdentifier</strong>, a website and Discord bot used by players of Ballsdex and other "dex" bots.
+                                Together with <a class="inline-link" href="https://nekido.pl" target="_blank" rel="noopener">Nekido</a> I also created
+                                <strong>fansuby.cc</strong>, a catalog of Polish anime subtitles.
+                            </p>
+                            <p>I run a couple of Polish communities (Desu-Online, Discord Bots Poland), and after hours…</p>
+                            <div class="likes" id="likes"></div>
+                            <div class="stack" id="stack"></div>
+                        </div>
+                    </article>
+
+                    <article class="panel discord reveal" id="discord" aria-live="polite">
+                        <div class="discord-banner"></div>
+                        <div class="discord-top">
+                            <div class="discord-avatar">
+                                <img class="avatar" id="discord-avatar" src="/avatar.png" alt="Discord avatar" />
+                                <span class="status-dot" id="discord-dot"></span>
+                            </div>
+                            <div class="discord-name">
+                                <strong id="discord-name">Meffiu</strong>
+                                <small><span id="discord-username">meffiu</span><span class="guild-tag" id="discord-tag" hidden></span></small>
+                            </div>
+                        </div>
+                        <div class="discord-body">
+                            <div class="status-line"><span class="led" id="discord-led"></span><span id="discord-status">connecting…</span></div>
+                            <div id="discord-custom"></div>
+                            <div class="activities" id="discord-activities"><div class="skeleton"></div></div>
+                            <div class="discord-foot">
+                                <span>live via Lanyard</span>
+                                <a id="discord-profile" target="_blank" rel="noopener">Add me on Discord →</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects" class="wrap">
+                <div class="label">02 // projects</div>
+                <h2>Things I've built</h2>
+                <div class="projects" id="projects-list"></div>
+                <a class="more-link" href="https://github.com/Meff1u?tab=repositories" target="_blank" rel="noopener">More on GitHub →</a>
+            </section>
+
+            <section id="communities" class="wrap">
+                <div class="label">03 // communities</div>
+                <h2>Communities I run</h2>
+                <div class="communities" id="communities-list"></div>
+            </section>
+
+            <section id="socials" class="wrap">
+                <div class="label">04 // socials</div>
+                <h2>Find me here</h2>
+                <div class="socials" id="socials-list"></div>
+            </section>
+        </main>
+
+        <footer class="wrap">© <span id="year"></span> MEFFIU · made with <span class="heart">♥</span> and neon</footer>
+
+        <script type="module" src="/src/main.js"></script>
+    </body>
+</html>

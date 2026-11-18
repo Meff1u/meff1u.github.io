@@ -1,0 +1,14 @@
+[
+    { "name": "Discord", "icon": "discord", "color": "#7b8cff", "handle": "meffiu", "url": "https://discord.com/users/334411435633541121" },
+    { "name": "GitHub", "icon": "github", "color": "#e9d6ff", "handle": "Meff1u", "url": "https://github.com/Meff1u" },
+    { "name": "YouTube", "icon": "youtube", "color": "#ff4d6d", "handle": "Meffiu", "url": "https://youtube.com/c/Meffiu" },
+    { "name": "Twitch", "icon": "twitch", "color": "#b17bff", "handle": "meffiu___", "url": "https://twitch.tv/meffiu___" },
+    { "name": "Kick", "icon": "kick", "color": "#53fc18", "handle": "meffiu", "url": "https://kick.com/meffiu" },
+    { "name": "TikTok", "icon": "tiktok", "color": "#3ff3ff", "handle": "meffiu_", "url": "https://tiktok.com/@meffiu_" },
+    { "name": "Instagram", "icon": "instagram", "color": "#ff5fa8", "handle": "mefjuuu96", "url": "https://instagram.com/mefjuuu96" },
+    { "name": "X", "icon": "x", "color": "#f2f2f2", "handle": "meffiu__", "url": "https://x.com/meffiu__" },
+    { "name": "Spotify", "icon": "spotify", "color": "#3dffa0", "handle": "Meffiu", "url": "https://open.spotify.com/user/215n3zzp6s5apcrb2u4c4z5ha" },
+    { "name": "Steam", "icon": "steam", "color": "#8fc8ff", "handle": "meffiusensei", "url": "https://steamcommunity.com/id/meffiusensei" },
+    { "name": "MyAnimeList", "icon": "myanimelist", "color": "#6f9bff", "handle": "meffiu", "url": "https://myanimelist.net/profile/meffiu" },
+    { "name": "PayPal", "icon": "paypal", "color": "#ffc83d", "handle": "support me", "url": "https://paypal.me/Meffiu" }
+]
