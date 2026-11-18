@@ -7,7 +7,7 @@
     --ease: cubic-bezier(0.22, 1, 0.36, 1);
     color-scheme: dark;
 
-    --bg: #0d0318;
+    --bg: #080110;
     --surface: rgba(30, 10, 54, 0.72);
     --surface-solid: #1c0a33;
     --surface-deep: rgba(13, 3, 24, 0.6);
@@ -85,8 +85,8 @@ img {
 .sky {
     inset: 0;
     background:
-        radial-gradient(ellipse 80% 50% at 50% 62%, rgba(255, 45, 149, 0.28), transparent 70%),
-        linear-gradient(180deg, #07010f 0%, #14052a 38%, #2a0a4a 58%, #12031f 60%, #0d0318 100%);
+        radial-gradient(ellipse 80% 50% at 50% 62%, rgba(255, 45, 149, 0.18), transparent 70%),
+        linear-gradient(180deg, #040008 0%, #0c0219 38%, #1c0633 58%, #0b0214 60%, #080110 100%);
 }
 
 .stars {
@@ -141,7 +141,7 @@ img {
     right: 0;
     top: calc(60% - 9vh);
     height: 9vh;
-    background: #0f0320;
+    background: #0a0218;
     clip-path: polygon(0 100%, 0 55%, 6% 30%, 12% 62%, 19% 18%, 27% 70%, 33% 40%, 38% 75%, 62% 75%, 67% 35%, 73% 66%, 80% 12%, 87% 58%, 93% 28%, 100% 50%, 100% 100%);
     filter: drop-shadow(0 -1px 0 rgba(255, 63, 180, 0.6));
 }

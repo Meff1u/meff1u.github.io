@@ -1,6 +1,5 @@
 export default {
     discordId: "334411435633541121",
-    // discords.com lists the age, not a full birth date, so it is kept as a plain number
     age: 23,
     lanyard: {
         restUrl: "https://api.lanyard.rest/v1/users/",

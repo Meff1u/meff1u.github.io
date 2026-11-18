@@ -71,12 +71,12 @@ const stars = Array.from({ length: 70 }, (_, i) => {
 
 const svg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
 <defs>
-<linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#07010f"/><stop offset="0.45" stop-color="#14052a"/><stop offset="0.68" stop-color="#2a0a4a"/><stop offset="0.69" stop-color="#12031f"/><stop offset="1" stop-color="#0d0318"/></linearGradient>
-<radialGradient id="haze" cx="${sun.x}" cy="${horizon}" r="620" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff2d95" stop-opacity="0.35"/><stop offset="1" stop-color="#ff2d95" stop-opacity="0"/></radialGradient>
+<linearGradient id="sky" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#040008"/><stop offset="0.45" stop-color="#0c0219"/><stop offset="0.68" stop-color="#1c0633"/><stop offset="0.69" stop-color="#0b0214"/><stop offset="1" stop-color="#080110"/></linearGradient>
+<radialGradient id="haze" cx="${sun.x}" cy="${horizon}" r="620" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ff2d95" stop-opacity="0.22"/><stop offset="1" stop-color="#ff2d95" stop-opacity="0"/></radialGradient>
 <linearGradient id="sun" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#ffc96b"/><stop offset="0.45" stop-color="#ff3fb4"/><stop offset="0.9" stop-color="#9b3dff"/></linearGradient>
 <linearGradient id="ring" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ff3fb4"/><stop offset="0.5" stop-color="#8b3dff"/><stop offset="1" stop-color="#3ff3ff"/></linearGradient>
-<linearGradient id="floorFade" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0d0318" stop-opacity="1"/><stop offset="0.25" stop-color="#0d0318" stop-opacity="0"/></linearGradient>
-<linearGradient id="textFade" x1="0" x2="1"><stop offset="0.35" stop-color="#0d0318" stop-opacity="0.85"/><stop offset="0.62" stop-color="#0d0318" stop-opacity="0"/></linearGradient>
+<linearGradient id="floorFade" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#080110" stop-opacity="1"/><stop offset="0.25" stop-color="#080110" stop-opacity="0"/></linearGradient>
+<linearGradient id="textFade" x1="0" x2="1"><stop offset="0.35" stop-color="#080110" stop-opacity="0.85"/><stop offset="0.62" stop-color="#080110" stop-opacity="0"/></linearGradient>
 <mask id="sunMask"><rect width="${width}" height="${height}" fill="#fff"/>${stripes}</mask>
 <clipPath id="avatarClip"><circle cx="${sun.x}" cy="${sun.y - 30}" r="96"/></clipPath>
 <filter id="glow" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="9" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
@@ -88,13 +88,13 @@ ${stars}
 <circle cx="${sun.x}" cy="${sun.y}" r="${sun.r + 20}" fill="#ff3fb4" fill-opacity="0.35" filter="url(#softGlow)"/>
 <circle cx="${sun.x}" cy="${sun.y}" r="${sun.r}" fill="url(#sun)" mask="url(#sunMask)"/>
 <polygon points="${mountains}" fill="#0f0320" stroke="#ff3fb4" stroke-opacity="0.6" stroke-width="1.5"/>
-<rect x="0" y="${horizon}" width="${width}" height="${height - horizon}" fill="#0d0318"/>
+<rect x="0" y="${horizon}" width="${width}" height="${height - horizon}" fill="#080110"/>
 <g stroke="#ff3fb4" stroke-opacity="0.75" stroke-width="2">${floorLines.join("")}</g>
 <rect x="0" y="${horizon}" width="${width}" height="${height - horizon}" fill="url(#floorFade)"/>
 <line x1="0" y1="${horizon}" x2="${width}" y2="${horizon}" stroke="#ff3fb4" stroke-width="2.5" filter="url(#glow)"/>
 <rect width="${width}" height="${height}" fill="url(#textFade)"/>
 <circle cx="${sun.x}" cy="${sun.y - 30}" r="106" fill="url(#ring)" filter="url(#glow)"/>
-<circle cx="${sun.x}" cy="${sun.y - 30}" r="100" fill="#0d0318"/>
+<circle cx="${sun.x}" cy="${sun.y - 30}" r="100" fill="#080110"/>
 <image href="${avatar}" xlink:href="${avatar}" x="${sun.x - 96}" y="${sun.y - 126}" width="192" height="192" clip-path="url(#avatarClip)" preserveAspectRatio="xMidYMid slice"/>
 <text x="72" y="290" font-family="Monoton" font-size="132" letter-spacing="4" fill="#ffe6f7" filter="url(#glow)">MEFFIU</text>
 <text x="82" y="345" font-family="Space Mono" font-size="24" fill="#c8b3e6">Bio, projects &amp; live Discord status</text>
